@@ -1,0 +1,112 @@
+clause_text,clause_type,risk_level,label_source
+"The monthly rent for the 1 BHK flat at Kothrud is Rs. 19,000 and the Tenant shall pay a refundable security deposit of Rs. 66,500.",deposit,High,rule
+The Licensee shall comply with the rules and bye-laws of the housing society.,general,Low,hand
+"The Licensee shall not sublet, assign or part with possession of the flat or any part of it to any other person.",general,Low,hand
+The Landlord may deduct any amount from the deposit at his sole discretion without providing proof.,deposit,High,hand
+"Internet and cable charges shall be paid by the Tenant, and the Landlord shall permit the installation.",utilities,Low,hand
+The Licensor shall hand over vacant possession of the flat to the Licensee on the date of commencement.,general,Low,hand
+"The monthly rent for the 2 BHK flat at Hinjewadi Phase 1 shall be Rs. 22,000, payable on or before the fifth of every month.",rent,Low,rule
+The Tenant shall repaint the entire flat before vacating at his own cost.,maintenance,Medium,hand
+The rent shall be increased by 20 percent on renewal of the agreement after every eleven months.,rent_increase,High,rule
+"The Tenant shall not vacate during the lock-in period of eleven months, failing which the entire remaining rent becomes payable immediately.",lockin,High,hand
+"The monthly rent for the 2 BHK flat at Kothrud shall be Rs. 34,000, payable on or before the fifth of every month.",rent,Medium,rule
+"The monthly rent for the 3 BHK flat at Wakad is Rs. 39,000 and the Tenant shall pay a refundable security deposit of Rs. 78,000.",deposit,Low,rule
+"Minor repairs caused by the Tenant shall be done at his cost, while major repairs not caused by the Tenant shall be done by the Landlord within seven days.",maintenance,Low,hand
+The Licensee shall not allow more than the agreed number of persons to stay in the flat.,general,Low,hand
+The Tenant shall pay a fixed monthly charge of Rs. 800 for water irrespective of consumption.,utilities,Medium,hand
+"The monthly rent for the 3 BHK flat at Balewadi shall be Rs. 50,500, payable on or before the fifth of every month.",rent,Medium,rule
+The security deposit shall be refunded within fifteen days of handover after deducting documented damages.,deposit,Low,rule
+The Licensor confirms that he is the lawful owner of the flat and has the right to give it on leave and license.,general,Low,hand
+"A late fee of Rs. 500 per day shall be charged from the day after the due date, with no grace period.",penalty,High,rule
+Appliance servicing shall be done by the Tenant at his own cost.,maintenance,Medium,hand
+The security deposit shall be refunded within ninety days of handover after deducting documented damages.,deposit,High,rule
+The Landlord may retain the entire deposit as a cleaning and repainting charge irrespective of the actual condition.,deposit,High,hand
+The rent shall be increased by 5 percent on renewal of the agreement after every eleven months.,rent_increase,Low,rule
+No late fee shall be charged if the rent is paid within a grace period of seven days after the due date.,penalty,Low,hand
+The Licensee shall keep the premises clean and shall not cause nuisance or annoyance to the neighbours.,general,Low,hand
+"The Landlord may impose fines at his discretion for noise, parking or any other issue as he deems fit.",penalty,High,hand
+"The monthly rent for the 1 BHK flat at Baner is Rs. 21,000 and the Tenant shall pay a refundable security deposit of Rs. 52,500.",deposit,Medium,rule
+"The monthly rent for the 2 BHK flat at Baner shall be Rs. 36,500, payable on or before the fifth of every month.",rent,Medium,rule
+The rent shall be increased by 5 percent on renewal of the agreement after every eleven months.,rent_increase,Low,rule
+"The Licensee shall hand over the flat in the same condition as received, excluding normal wear and tear.",general,Low,hand
+"The Landlord may terminate this agreement only on breach of terms, after giving a written notice of thirty days to remedy it.",eviction,Low,hand
+"The Tenant must vacate within seven days of receiving a notice from the Landlord, failing which belongings may be removed.",eviction,High,hand
+"The Tenant agrees to pay a monthly rent of Rs. 24,500 for the 2 BHK flat situated in Hinjewadi Phase 2.",rent,Low,rule
+The rent shall be increased by 12 percent on renewal of the agreement after every eleven months.,rent_increase,Medium,rule
+"Overnight visitors are allowed only with the prior written permission of the Licensor, who may refuse without giving reasons.",general,Medium,hand
+The Licensee shall use the flat only for residential purposes and not for any business or commercial activity.,general,Low,hand
+"The monthly rent for the 2 BHK flat at Hinjewadi Phase 2 is Rs. 24,000 and the Tenant shall pay a refundable security deposit of Rs. 24,000.",deposit,Low,rule
+This agreement shall be governed by the laws of India and the courts at Pune shall have jurisdiction.,general,Low,hand
+"The deposit shall be refunded after deducting only documented damages, and the bills shall be shown to the Tenant.",deposit,Low,hand
+"The lock-in period is nine months for the Tenant, and the Landlord has no lock-in.",lockin,High,hand
+"Early termination during the lock-in period is possible only with the written consent of the Landlord, which may be withheld.",lockin,Medium,hand
+"The security deposit shall not be refunded if the Tenant leaves before completing the full term, whatever the reason.",deposit,High,hand
+"Any damage to the property, including normal wear and tear, shall be repaired at the Tenant's expense.",maintenance,High,hand
+The rent shall be increased by 8 percent on renewal of the agreement after every eleven months.,rent_increase,Low,rule
+"There is a lock-in period of twelve months applicable only to the Tenant, while the Landlord may terminate at any time.",lockin,High,hand
+"A lock-in period of six months applies to both parties, after which one month's notice is sufficient.",lockin,Low,hand
+The rent shall be increased by 18 percent on renewal of the agreement after every eleven months.,rent_increase,High,rule
+"The monthly rent for the 1 BHK flat at Wakad shall be Rs. 20,500, payable on or before the fifth of every month.",rent,Low,rule
+A late fee of Rs. 100 per day shall be charged if the rent is not paid within 7 days of the due date.,penalty,Low,rule
+The Landlord may cut off electricity and water supply if rent is delayed by any number of days.,utilities,High,hand
+Electricity and metered water shall be paid by the Tenant as per the actual meter readings.,utilities,Low,hand
+The tenancy is for eleven months and may be renewed by mutual written consent.,lockin,Low,hand
+A late fee of Rs. 200 per day shall be charged if the rent is not paid within 5 days of the due date.,penalty,Low,rule
+All property tax and building taxes shall be paid by the Tenant in addition to the monthly rent.,utilities,High,hand
+"The monthly rent for the 3 BHK flat at Hinjewadi Phase 1 is Rs. 31,000 and the Tenant shall pay a refundable security deposit of Rs. 1,24,000.",deposit,High,rule
+The Licensor or his representative may inspect the flat at reasonable times after giving prior notice to the Licensee.,general,Low,hand
+The Landlord reserves the right to evict the Tenant at any time without notice and without assigning any reason.,eviction,High,hand
+"The monthly rent for the 2 BHK flat at Hinjewadi Phase 2 is Rs. 24,000 and the Tenant shall pay a refundable security deposit of Rs. 1,20,000.",deposit,High,rule
+"The Licensee shall not store any hazardous, illegal or inflammable goods in the flat.",general,Low,hand
+The rent shall be increased by 25 percent on renewal of the agreement after every eleven months.,rent_increase,High,rule
+"The Licensee shall be fully liable for every loss or damage to the flat, whether or not it was caused by the Licensee.",general,High,hand
+"The monthly rent for the 2 BHK flat at Viman Nagar is Rs. 33,000 and the Tenant shall pay a refundable security deposit of Rs. 66,000.",deposit,Low,rule
+"The Tenant shall pay the society maintenance as per the latest society bill, which the Landlord has shown to the Tenant.",maintenance,Medium,hand
+"Electricity shall be charged at Rs. 15 per unit as decided by the Landlord, irrespective of the actual tariff.",utilities,High,hand
+The Landlord can terminate the tenancy by giving fifteen days' notice if the property is required for personal use.,eviction,Medium,hand
+"Monthly maintenance shall be paid extra by the Tenant, as informed by the Landlord from time to time.",maintenance,High,hand
+"The Landlord shall pay the society maintenance, sinking fund and corpus fund, and shall bear the cost of structural repairs.",maintenance,Low,hand
+The security deposit shall be refunded within sixty days of handover after deducting documented damages.,deposit,Medium,rule
+The Landlord is not responsible for any repairs during the tenancy and the Tenant must not complain about defects.,maintenance,High,hand
+"The Tenant agrees to pay a monthly rent of Rs. 24,500 for the 1 BHK flat situated in Kharadi.",rent,Medium,rule
+"The monthly rent for the 1 BHK flat at Sus Gaon is Rs. 14,000 and the Tenant shall pay a refundable security deposit of Rs. 84,000.",deposit,High,rule
+A late fee of Rs. 200 per day shall be charged if the rent is not paid within 2 days of the due date.,penalty,High,rule
+The rent shall be increased by 15 percent on renewal of the agreement after every eleven months.,rent_increase,Medium,rule
+Either party must give a written notice of one month before ending the tenancy.,eviction,Low,hand
+"The monthly rent for the 2 BHK flat at Hinjewadi Phase 1 shall be Rs. 29,500, payable on or before the fifth of every month.",rent,High,rule
+"Gas, internet and metered water charges shall be paid by the Tenant as per actual bills.",utilities,Low,hand
+"The monthly rent for the 1 BHK flat at Sus Gaon is Rs. 14,000 and the Tenant shall pay a refundable security deposit of Rs. 21,000.",deposit,Low,rule
+"In case of non-payment of rent for two consecutive months, the Landlord may terminate the agreement after a seven day notice.",eviction,Medium,hand
+"If the Tenant leaves within the lock-in period, the security deposit shall be forfeited and the balance rent shall be recovered.",lockin,High,hand
+"The monthly rent for the 2 BHK flat at Viman Nagar shall be Rs. 36,000, payable on or before the fifth of every month.",rent,Low,rule
+The rent shall be increased by 7 percent on renewal of the agreement after every eleven months.,rent_increase,Low,rule
+The Licensor may enter the flat at any time without informing the Licensee.,general,High,hand
+A late fee of Rs. 400 per day shall be charged if the rent is not paid within 5 days of the due date.,penalty,Medium,rule
+A late fee of Rs. 300 per day shall be charged if the rent is not paid within 3 days of the due date.,penalty,Medium,rule
+"The monthly rent for the 1 BHK flat at Sus Gaon shall be Rs. 25,000, payable on or before the fifth of every month.",rent,High,rule
+A late fee of Rs. 1000 per day shall be charged if the rent is not paid within 3 days of the due date.,penalty,High,rule
+"The monthly rent for the 3 BHK flat at Hinjewadi Phase 2 shall be Rs. 41,000, payable on or before the fifth of every month.",rent,High,rule
+"The monthly rent for the 2 BHK flat at Wakad shall be Rs. 41,000, payable on or before the fifth of every month.",rent,High,rule
+A penalty equal to three months' rent will be imposed if guests stay overnight without permission.,penalty,High,hand
+The security deposit shall be refunded within thirty days of handover after deducting documented damages.,deposit,Low,rule
+"The monthly rent for the 3 BHK flat at Balewadi is Rs. 46,000 and the Tenant shall pay a refundable security deposit of Rs. 1,38,000.",deposit,Medium,rule
+"No structural change, drilling or alteration shall be made in the flat without the written consent of the Licensor.",general,Low,hand
+A late fee of Rs. 150 per day shall be charged if the rent is not paid within 7 days of the due date.,penalty,Low,rule
+Either party may terminate during the lock-in period of six months by giving one month's written notice and paying one month's rent.,lockin,Low,hand
+The Licensee shall not keep pets without the prior permission of the Licensor and the society.,general,Low,hand
+"The monthly rent for the 2 BHK flat at Kharadi is Rs. 29,000 and the Tenant shall pay a refundable security deposit of Rs. 87,000.",deposit,Medium,rule
+"The monthly rent for the 1 BHK flat at Kothrud shall be Rs. 17,000, payable on or before the fifth of every month.",rent,Low,rule
+The rent shall be increased by 10 percent on renewal of the agreement after every eleven months.,rent_increase,Low,rule
+"The Tenant shall bear the sinking fund, corpus fund and any structural repairs of the flat.",maintenance,High,hand
+"The lock-in period is eight months, and early exit requires payment of two months' rent as compensation.",lockin,Medium,hand
+The security deposit shall be refunded within forty five days of handover after deducting documented damages.,deposit,Medium,rule
+The agreement is a registered Leave and License Agreement for eleven months with a mutual lock-in of three months for both parties.,lockin,Low,hand
+The Landlord may enter and lock the premises immediately if the Tenant delays rent by even one day.,eviction,High,hand
+Common area electricity and lift charges shall be paid through the society maintenance borne by the Landlord.,utilities,Low,hand
+The Tenant shall pay electricity at the tariff charged by MSEDCL without any markup.,utilities,Low,hand
+"The Tenant shall pay a penalty of Rs. 5,000 per day for any breach of any clause of this agreement.",penalty,High,hand
+"The monthly rent for the 3 BHK flat at Wakad is Rs. 39,000 and the Tenant shall pay a refundable security deposit of Rs. 3,90,000.",deposit,High,rule
+"On termination for personal use, the Tenant shall get thirty days' notice and the deposit shall be refunded on the same day.",eviction,Low,hand
+"The monthly rent for the 3 BHK flat at Sus Gaon shall be Rs. 34,500, payable on or before the fifth of every month.",rent,Low,rule
+"Clubhouse, move-in and move-out charges shall be shared equally between the Landlord and the Tenant.",maintenance,Medium,hand
+"Eviction shall follow due process of law, and the Tenant will be given a minimum of sixty days to vacate.",eviction,Low,hand

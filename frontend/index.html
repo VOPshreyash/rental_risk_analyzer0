@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental Agreement Risk Analyzer — Pune</title>
+  <meta name="description" content="Analyze your Pune Leave & License rental agreement for risk using NLP. Get clause-by-clause risk ratings, an overall score, and expert warnings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── BACKGROUND BLOBS ─────────────────────────────────────────────── -->
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+  <!-- ── HEADER ────────────────────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon">🏠</span>
+        <div>
+          <h1 class="brand-title">Rental Risk Analyzer</h1>
+          <p class="brand-sub">Pune Leave &amp; License Agreement — NLP Analysis</p>
+        </div>
+      </div>
+      <div class="header-badge">Hybrid AI · Rules + ML</div>
+    </div>
+  </header>
+
+  <!-- ── MAIN ──────────────────────────────────────────────────────────── -->
+  <main class="main-layout">
+
+    <!-- LEFT PANEL -->
+    <section class="panel panel-left">
+
+      <!-- TABS -->
+      <div class="tab-bar" role="tablist">
+        <button class="tab-btn active" id="tab-form-btn" role="tab" aria-selected="true" aria-controls="tab-form" onclick="switchTab('form')">
+          <span>📋</span> Fill Form
+        </button>
+        <button class="tab-btn" id="tab-text-btn" role="tab" aria-selected="false" aria-controls="tab-text" onclick="switchTab('text')">
+          <span>📄</span> Paste Agreement
+        </button>
+      </div>
+
+      <!-- ── TAB: FILL FORM ── -->
+      <div id="tab-form" class="tab-content active" role="tabpanel" aria-labelledby="tab-form-btn">
+
+        <div class="section-label">🏙️ Property Details</div>
+
+        <div class="form-row two-col">
+          <div class="field-group">
+            <label for="area">Area</label>
+            <select id="area" name="area">
+              <option value="kothrud">Kothrud</option>
+              <option value="hinjewadi phase 1">Hinjewadi Phase 1</option>
+              <option value="hinjewadi phase 2/3">Hinjewadi Phase 2/3</option>
+              <option value="sus gaon">Sus Gaon</option>
+              <option value="wakad">Wakad</option>
+              <option value="viman nagar">Viman Nagar</option>
+              <option value="baner/balewadi">Baner / Balewadi</option>
+              <option value="kharadi">Kharadi</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="bhk">BHK</label>
+            <select id="bhk" name="bhk">
+              <option value="1">1 BHK</option>
+              <option value="2" selected>2 BHK</option>
+              <option value="3">3 BHK</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="field-group">
+            <label for="months">Period (months)</label>
+            <input type="number" id="months" name="months" value="11" min="1" max="120" />
+          </div>
+          <div class="field-group">
+            <label for="maint">Maintenance (Clause 4)</label>
+            <select id="maint" name="maint">
+              <option value="licensor">Licensor pays all outgoings</option>
+              <option value="licensee">Licensee pays maintenance</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-label">💰 Rent &amp; Deposit</div>
+
+        <div class="form-row">
+          <div class="field-group">
+            <label for="mode">Rent Type</label>
+            <select id="mode" name="mode" onchange="toggleStaged()">
+              <option value="Fixed rent">Fixed Rent</option>
+              <option value="Staged rent">Staged Rent (changes mid-term)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="field-group">
+            <label for="rent" id="rent-label">Monthly Rent (₹)</label>
+            <input type="number" id="rent" name="rent" value="29000" min="1000" />
+          </div>
+          <div class="field-group" id="rent2-group" style="display:none">
+            <label for="rent2">Rent after change (₹)</label>
+            <input type="number" id="rent2" name="rent2" value="32000" min="1000" />
+          </div>
+          <div class="field-group" id="m1-group" style="display:none">
+            <label for="m1">Months at first rent</label>
+            <input type="number" id="m1" name="m1" value="6" min="1" />
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="field-group">
+            <label for="dep">Deposit (₹)</label>
+            <input type="number" id="dep" name="dep" value="58000" min="0" />
+          </div>
+          <div class="field-group">
+            <label for="deptype">Deposit Type</label>
+            <select id="deptype" name="deptype">
+              <option value="Refundable">Refundable</option>
+              <option value="Non-refundable">Non-refundable</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="section-label addon-label">
+          ➕ Add-on Clauses
+          <span class="addon-hint">Set to 0 to exclude — listed as "NOT STATED"</span>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="field-group">
+            <label for="lock">Lock-in (months, 0 = none)</label>
+            <input type="number" id="lock" name="lock" value="0" min="0" />
+          </div>
+          <div class="field-group">
+            <label for="lockwho">Lock-in applies to</label>
+            <select id="lockwho" name="lockwho">
+              <option value="both">Both parties</option>
+              <option value="licensee">Licensee only</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="field-group">
+            <label for="esc">Yearly increase % (0 = none)</label>
+            <input type="number" id="esc" name="esc" value="0" min="0" step="0.5" />
+          </div>
+          <div class="field-group">
+            <label for="refund">Deposit refund within days (0 = none)</label>
+            <input type="number" id="refund" name="refund" value="0" min="0" />
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="field-group">
+            <label for="fee">Late fee ₹/day (0 = none)</label>
+            <input type="number" id="fee" name="fee" value="0" min="0" />
+          </div>
+          <div class="field-group">
+            <label for="grace">Late-fee grace days</label>
+            <input type="number" id="grace" name="grace" value="7" min="0" />
+          </div>
+        </div>
+
+        <button class="analyse-btn" id="analyse-form-btn" onclick="analyseForm()">
+          <span class="btn-icon">⚡</span>
+          Analyse Agreement
+        </button>
+      </div>
+
+      <!-- ── TAB: PASTE TEXT ── -->
+      <div id="tab-text" class="tab-content" role="tabpanel" aria-labelledby="tab-text-btn">
+
+        <div class="section-label">📍 Context (for rent rule)</div>
+        <div class="form-row two-col">
+          <div class="field-group">
+            <label for="text-area">Area</label>
+            <select id="text-area" name="text-area">
+              <option value="kothrud">Kothrud</option>
+              <option value="hinjewadi phase 1">Hinjewadi Phase 1</option>
+              <option value="hinjewadi phase 2/3">Hinjewadi Phase 2/3</option>
+              <option value="sus gaon">Sus Gaon</option>
+              <option value="wakad">Wakad</option>
+              <option value="viman nagar">Viman Nagar</option>
+              <option value="baner/balewadi">Baner / Balewadi</option>
+              <option value="kharadi">Kharadi</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="text-bhk">BHK</label>
+            <select id="text-bhk" name="text-bhk">
+              <option value="1">1 BHK</option>
+              <option value="2" selected>2 BHK</option>
+              <option value="3">3 BHK</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="agreement-text">Paste Your Agreement Text</label>
+          <textarea
+            id="agreement-text"
+            name="agreement-text"
+            rows="14"
+            placeholder="Paste your Leave & License agreement text here...&#10;&#10;Example:&#10;1) Period: That the Licensor grants a license for 11 months.&#10;2) Rent & Deposit: Rs. 29,000 per month and Rs. 58,000 deposit..."
+          ></textarea>
+        </div>
+
+        <button class="analyse-btn" id="analyse-text-btn" onclick="analyseText()">
+          <span class="btn-icon">⚡</span>
+          Analyse Agreement
+        </button>
+      </div>
+
+    </section>
+
+    <!-- RIGHT PANEL (RESULTS) -->
+    <section class="panel panel-right" id="results-panel">
+
+      <!-- IDLE STATE -->
+      <div class="idle-state" id="idle-state">
+        <div class="idle-icon">📊</div>
+        <h2 class="idle-title">Results appear here</h2>
+        <p class="idle-sub">Fill in your rental details or paste an agreement on the left, then click <strong>Analyse Agreement</strong>.</p>
+        <div class="idle-scenarios">
+          <p class="scenario-title">Try a sample scenario:</p>
+          <div class="scenario-btns">
+            <button class="scenario-btn fair" onclick="loadScenario('fair')">✅ Fair</button>
+            <button class="scenario-btn border" onclick="loadScenario('borderline')">⚠️ Borderline</button>
+            <button class="scenario-btn risky" onclick="loadScenario('risky')">🔴 Risky</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOADING STATE -->
+      <div class="loading-state hidden" id="loading-state">
+        <div class="spinner"></div>
+        <p class="loading-text">Analysing agreement…<br/><span class="loading-sub">Running NLP engine</span></p>
+      </div>
+
+      <!-- RESULTS STATE -->
+      <div class="results-state hidden" id="results-state">
+
+        <!-- Score gauge -->
+        <div class="gauge-section">
+          <div class="gauge-wrap">
+            <svg class="gauge-svg" viewBox="0 0 200 120" width="200" height="120">
+              <path class="gauge-track" d="M 20 100 A 80 80 0 0 1 180 100" stroke-width="16" fill="none" stroke-linecap="round"/>
+              <path class="gauge-fill" id="gauge-arc" d="M 20 100 A 80 80 0 0 1 180 100" stroke-width="16" fill="none" stroke-linecap="round"
+                    stroke-dasharray="251.2" stroke-dashoffset="251.2"/>
+            </svg>
+            <div class="gauge-center">
+              <div class="gauge-score" id="gauge-score">–</div>
+              <div class="gauge-label">/ 100</div>
+            </div>
+          </div>
+          <div class="risk-badge-wrap">
+            <div class="risk-badge" id="risk-badge">–</div>
+            <div class="risk-badge-sub">Overall Risk</div>
+          </div>
+        </div>
+
+        <!-- Stat pills -->
+        <div class="stat-pills" id="stat-pills"></div>
+
+        <!-- Possession note -->
+        <div class="possession-note hidden" id="possession-note"></div>
+
+        <!-- NOT STATED warnings -->
+        <div class="not-stated-section hidden" id="not-stated-section">
+          <div class="section-hdr">⚠️ NOT STATED in this agreement</div>
+          <div id="not-stated-list"></div>
+        </div>
+
+        <!-- Clause breakdown -->
+        <div class="section-hdr clauses-hdr">📋 Clause Breakdown</div>
+        <div class="clauses-list" id="clauses-list"></div>
+
+        <!-- Generated agreement (form mode only) -->
+        <div class="agreement-section hidden" id="agreement-section">
+          <button class="toggle-btn" onclick="toggleAgreement()">
+            📄 Show / Hide Generated Agreement Text
+          </button>
+          <pre class="agreement-text hidden" id="agreement-text-out"></pre>
+        </div>
+
+      </div>
+
+      <!-- ERROR STATE -->
+      <div class="error-state hidden" id="error-state">
+        <div class="error-icon">⚠️</div>
+        <p class="error-msg" id="error-msg">Something went wrong. Please try again.</p>
+        <p class="error-hint">Make sure the backend API is running.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <p>Rental Agreement Risk Analyzer · Pune NLP Lab Project · <strong>Not legal advice</strong></p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
